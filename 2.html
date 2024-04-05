@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mobile Shop</title>
+<style>
+  div#t1{
+  border:  solid 1px #50b3a2;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #50b3a2;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+  }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  header ul {
+    padding: 0;
+    list-style: none;
+  }
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  header #branding {
+    float: left;
+  }
+  header #branding h1 {
+    margin: 0;
+  }
+  header nav {
+    float: right;
+    margin-top: 10px;
+  }
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+  }
+  header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+  }
+</style>
+<style>
+    /* Add your CSS styles here */
+    .cart-container {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .cart-item:last-child {
+      margin-bottom: 0;
+    }
+    .item-details {
+      flex-grow: 1;
+    }
+    .item-price {
+      font-weight: bold;
+    }
+    .total-price {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Mobile</span> Shop</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="cart-container">
+      <!-- Cart Item -->
+      <div class="cart-item">
+        <div class="item-details">
+          <h4>Iphone 15 pro max</h4>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$2999.00</div>
+      </div>
+<hr>
+      <div class="cart-item">
+        <div class="item-details">
+          <h4>Samsung S24 Ultra pro max</h4>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$2499.98</div>
+      </div>
+      <hr>
+      <!-- Cart Total -->
+      <div class="total-price">
+        Total: $5498.98
+      </div>
+    </div>
+  </div>
+</body>
+
+</body>
+</html>
